@@ -18,10 +18,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
+import com.mobile.todo.ui.view.TodoItemDetailsScreen
 import com.mobile.todo.ui.view.TodoItemsListScreen
 
 sealed class TodoAppScreen(val route: String, val title: String) {
@@ -69,6 +72,16 @@ fun TodoApp(
                     },
                     modifier = Modifier
                         .fillMaxSize()
+                        .padding(12.dp)
+                )
+            }
+
+            composable(
+                route = TodoAppScreen.TodoItemDetails.route,
+                arguments = listOf(navArgument("id") { type = NavType.IntType })
+            ) {
+                TodoItemDetailsScreen(
+                    modifier = Modifier
                         .padding(16.dp)
                 )
             }
@@ -97,6 +110,7 @@ fun TodoAppBar(
                     )
                 }
             }
-        }
+        },
+        modifier = modifier
     )
 }

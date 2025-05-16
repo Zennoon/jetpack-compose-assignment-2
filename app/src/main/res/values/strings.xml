@@ -3,5 +3,8 @@
 
     <string name="back_button">Go back</string>
     <string name="lorem_10">Lorem ipsum dolor sit amet.</string>
+    <string name="lorem_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
     <string name="no_todos">No todo items left. Great Job!</string>
+    <string name="completed">Completed</string>
+    <string name="not_completed">Not Completed</string>
 </resources>
