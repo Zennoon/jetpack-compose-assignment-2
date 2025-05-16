@@ -20,8 +20,8 @@ val QuickSand = FontFamily(
 val Typography = Typography(
     bodyLarge = TextStyle(
         fontFamily = QuickSand,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 20.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
     ),
@@ -32,7 +32,7 @@ val Typography = Typography(
         lineHeight = 28.sp,
         letterSpacing = 0.sp
     ),
-    labelSmall = TextStyle(
+    labelLarge = TextStyle(
         fontFamily = QuickSand,
         fontWeight = FontWeight.Light,
         fontSize = 14.sp,

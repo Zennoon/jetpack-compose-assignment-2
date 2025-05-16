@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Todo</string>
+
+    <string name="back_button">Go back</string>
+    <string name="lorem_10">Lorem ipsum dolor sit amet.</string>
+    <string name="no_todos">No todo items left. Great Job!</string>
 </resources>
